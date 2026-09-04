@@ -762,46 +762,167 @@ export default function Home() {
 
       </section>
 
-      {/* FOOTER */}
+     .{/* FOOTER */}
 
-      <footer className="relative z-10 border-t border-[#fff1d6]/10 px-4 py-10">
+<footer className="relative z-10 border-t border-[#fff1d6]/10 px-4 py-10">
 
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-5 text-center sm:flex-row sm:text-left">
+  <div className="mx-auto max-w-6xl">
 
-          <div className="flex items-center gap-3">
+    {/* RELATED TOOLS */}
 
-            <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-[#fff1d6]/25">
+    <div className="mb-10">
 
-              <img
-                src="/logo.png"
-                alt="KrishAIWorks"
-                className="h-full w-full rounded-full object-cover"
-              />
+      <div className="mb-6 text-center">
 
-            </div>
+        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#fff1d6]/60">
+          Explore More
+        </p>
 
-            <div>
+        <h3 className="mt-2 text-2xl font-bold">
+          More Useful Tools
+        </h3>
 
-              <p className="text-sm font-bold">
-                KrishAIWorks
-              </p>
+        <p className="mx-auto mt-2 max-w-xl text-sm text-zinc-500">
+          Explore more free tools from KrishAIWorks to make your
+          everyday digital tasks easier.
+        </p>
 
-              <p className="text-xs text-zinc-600">
-                AI Solutions That Work
-              </p>
+      </div>
 
-            </div>
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 
+        {/* PDF AI Summarizer */}
+
+        <a
+          href="https://pdfaisummarizer.krishaiworks.com/"
+          className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#fff1d6]/30 hover:bg-[#fff1d6]/[0.04]"
+        >
+
+          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-[#fff1d6]/20 bg-[#fff1d6]/10 text-lg">
+            📄
           </div>
 
+          <h4 className="font-semibold transition-colors group-hover:text-[#fff1d6]">
+            PDF AI Summarizer
+          </h4>
+
+          <p className="mt-2 text-xs leading-5 text-zinc-500">
+            Summarize lengthy PDF documents quickly with AI.
+          </p>
+
+        </a>
+
+
+        {/* PDF Merger & Splitter */}
+
+        <a
+          href="https://pdfmergersplitter.krishaiworks.com/"
+          className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#fff1d6]/30 hover:bg-[#fff1d6]/[0.04]"
+        >
+
+          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-[#fff1d6]/20 bg-[#fff1d6]/10 text-lg">
+            📚
+          </div>
+
+          <h4 className="font-semibold transition-colors group-hover:text-[#fff1d6]">
+            PDF Merger &amp; Splitter
+          </h4>
+
+          <p className="mt-2 text-xs leading-5 text-zinc-500">
+            Merge multiple PDFs or split documents into separate files.
+          </p>
+
+        </a>
+
+
+        {/* Image to PDF Converter */}
+
+        <a
+          href="https://imagetopdfconverter.krishaiworks.com/"
+          className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#fff1d6]/30 hover:bg-[#fff1d6]/[0.04]"
+        >
+
+          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-[#fff1d6]/20 bg-[#fff1d6]/10 text-lg">
+            🖼️
+          </div>
+
+          <h4 className="font-semibold transition-colors group-hover:text-[#fff1d6]">
+            Image to PDF Converter
+          </h4>
+
+          <p className="mt-2 text-xs leading-5 text-zinc-500">
+            Convert images into clean PDF documents instantly.
+          </p>
+
+        </a>
+
+
+        {/* AI Study Assistant */}
+
+        <a
+          href="https://aistudyassistant.krishaiworks.com/"
+          className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#fff1d6]/30 hover:bg-[#fff1d6]/[0.04]"
+        >
+
+          <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-[#fff1d6]/20 bg-[#fff1d6]/10 text-lg">
+            🎓
+          </div>
+
+          <h4 className="font-semibold transition-colors group-hover:text-[#fff1d6]">
+            AI Study Assistant
+          </h4>
+
+          <p className="mt-2 text-xs leading-5 text-zinc-500">
+            Get AI-powered help for studying, learning, and revision.
+          </p>
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+    {/* FOOTER BOTTOM */}
+
+    <div className="flex flex-col items-center justify-between gap-5 border-t border-white/10 pt-8 text-center sm:flex-row sm:text-left">
+
+      <div className="flex items-center gap-3">
+
+        <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-[#fff1d6]/25">
+
+          <img
+            src="/logo.png"
+            alt="KrishAIWorks"
+            className="h-full w-full rounded-full object-cover"
+          />
+
+        </div>
+
+        <div>
+
+          <p className="text-sm font-bold">
+            KrishAIWorks
+          </p>
+
           <p className="text-xs text-zinc-600">
-            © {new Date().getFullYear()} KrishAIWorks.
-            All rights reserved.
+            AI Solutions That Work
           </p>
 
         </div>
 
-      </footer>
+      </div>
+
+      <p className="text-xs text-zinc-600">
+        © {new Date().getFullYear()} KrishAIWorks.
+        All rights reserved.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
 
     </main>
   );
